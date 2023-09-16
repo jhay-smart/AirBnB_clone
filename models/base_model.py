@@ -35,9 +35,9 @@ class BaseModel:
                     self.id = value
                 elif key == "created_at" or key == "updated_at":
                     self.__dict__[key] = dt.strptime(value, timeformat)
-                elif key is "__class__":
+                elif key == "__class__":
                     pass
-                elif key is not "__class__":
+                elif key != "__class__":
                     self.__dict__[key] = value
 
     def __str__(self):

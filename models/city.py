@@ -5,7 +5,7 @@ class City that inherits from BaseModel
 import models.base_model
 
 
-class City(models.base_model.BaseModel)):
+class City(models.base_model.BaseModel):
     """
        City Class declration
             name string - empty string
